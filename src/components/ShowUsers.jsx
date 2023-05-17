@@ -15,7 +15,7 @@ export const ShowUsers = () => {
         setUsers(
             data.docs.map((doc) => ({...doc.data(), id: doc.id}))
         )  
-        console.log(users);      
+        //console.log(users);      
     }
     //getUsers();
 
@@ -41,7 +41,8 @@ export const ShowUsers = () => {
                 <tr>
                     <th>User Name</th>
                     <th>Email</th>
-                    <th>Password</th>            
+                    <th>Password</th> 
+                    <th>Actions</th>           
                 </tr>
                 </thead>
                 <tbody>
